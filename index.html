@@ -3,138 +3,308 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sérénité Digitale | Excellence Monitoring Togo</title>
+    <title>SéRéNiTé Digitale | Website Monitoring</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; }
-        .hero-gradient { background: radial-gradient(circle at top right, #e0f2fe 0%, #f8fafc 50%); }
+        /* Hero plein écran (vh) avec dégradé d'inspiration */
+        .hero-bg { 
+            height: 100vh;
+            background: radial-gradient(circle at top right, #e0f2fe 0%, #f8fafc 60%);
+        }
     </style>
 </head>
-<body class="text-slate-900 hero-gradient">
-
-    <nav class="container mx-auto px-6 py-8 flex items-center justify-between">
-        <div class="flex items-center gap-10">
-            <div class="text-xl font-extrabold tracking-tight text-blue-900">Sérénité<span class="text-blue-600">Digitale</span></div>
+<body class="text-slate-900 overflow-x-hidden">
+    <!-- Menu -->
+    <nav class="absolute top-0 left-0 w-full z-50">
+        <div class="container mx-auto px-6 py-8 flex items-center justify-between">
+            <div class="text-2xl font-extrabold tracking-tight text-blue-900">SéRé<span class="text-blue-600">NiTé</span></div>
             <div class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-500 uppercase tracking-wider">
                 <a href="#about" class="hover:text-blue-600 transition">À propos</a>
-                <a href="#solutions" class="hover:text-blue-600 transition">Solutions</a>
+                <a href="#services" class="hover:text-blue-600 transition">Services</a>
                 <a href="#pricing" class="hover:text-blue-600 transition">Tarifs</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
             </div>
-        </div>
-        <div class="flex items-center gap-6">
-            <a href="#contact" class="hidden sm:block text-sm font-bold text-slate-900">Se connecter</a>
-            <a href="#contact" class="bg-[#0f172a] text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-blue-900 transition shadow-lg">Demander un Audit</a>
+            <div>
+                <a href="#ussd-demo" class="bg-blue-100 text-blue-700 px-6 py-2 rounded-full text-sm font-bold hover:bg-blue-200 transition">Live Demo</a>
+                <a href="/login" class="bg-[#0f172a] text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-blue-200 transition">Connexion</a>
+            </div>
         </div>
     </nav>
 
-    <header class="container mx-auto px-6 pt-16 pb-24">
-        <div class="max-w-3xl">
-            <h1 class="text-5xl md:text-7xl font-extrabold text-[#0f172a] leading-[1.1] tracking-tight">
-                Solutions innovantes en <span class="text-blue-600">monitoring critique.</span>
-            </h1>
-            <p class="mt-8 text-xl text-slate-500 leading-relaxed max-w-2xl">
-                Nous protégeons votre chiffre d'affaires grâce à une surveillance proactive de vos plateformes Web et de vos parcours USSD au Togo.
-            </p>
-            <div class="mt-10 flex flex-wrap gap-4">
-                <a href="#contact" class="bg-[#0f172a] text-white px-8 py-4 rounded-lg font-bold hover:shadow-2xl transition">Nous contacter →</a>
-            </div>
-            
-            <div class="mt-16 pt-10 border-t border-slate-200">
-                <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">Expertise reconnue par les leaders</p>
-                <div class="flex flex-wrap gap-8 items-center opacity-40 grayscale">
-                    <span class="text-lg font-bold">AGL</span>
-                    <span class="text-lg font-bold">BOA</span>
-                    <span class="text-lg font-bold">ECOBANK</span>
-                    <span class="text-lg font-bold">TOGOCOM</span>
+
+    <!-- Hero -->
+    <header class="hero-bg flex items-center relative border-b border-slate-100">
+        <div class="container mx-auto px-6 pt-24 z-10">
+            <div class="max-w-4xl">
+                <span class="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Excellence Digitale au Togo</span>
+                <h1 class="mt-6 text-5xl md:text-7xl font-extrabold text-[#0f172a] leading-[1.1] tracking-tight">
+                    Votre site web mérite <span class="text-blue-600">99,99% de disponibilité.</span>
+                </h1>
+                <p class="mt-8 text-xl text-slate-500 leading-relaxed max-w-2xl">
+                    Nous protégeons la réputation et les revenus des nos clients partout dans le monde grâce à un monitoring proactif de leurs sites Web.
+                </p>
+                <div class="mt-12 flex flex-wrap gap-4">
+                    <a href="#contact" class="bg-[#0f172a] text-white px-10 py-5 rounded-xl font-bold hover:shadow-2xl transition text-lg">Demander une Démo</a>
+                    <a href="#pricing" class="bg-white text-slate-900 px-10 py-5 rounded-xl font-bold hover:bg-slate-50 border border-slate-200 transition text-lg">Voir les Tarifs →</a>
                 </div>
             </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-slate-400 animate-bounce">
+            <span class="text-xs font-semibold uppercase tracking-widest">Découvrir</span>
+            <span class="text-2xl">↓</span>
         </div>
     </header>
 
-    <section id="about" class="container mx-auto px-6 py-24">
-        <div class="flex flex-col lg:flex-row items-center gap-20">
-            <div class="lg:w-1/2">
-                <h2 class="text-4xl font-extrabold text-[#0f172a] leading-tight">
-                    Votre infrastructure est-elle vraiment <span class="text-blue-600">disponible ?</span>
-                </h2>
-                <p class="mt-6 text-lg text-slate-500 leading-relaxed">
-                    Un site lent ou un menu USSD saturé ne prévient jamais. Nous simulons des comportements utilisateurs réels pour détecter les anomalies avant qu'elles ne deviennent des pertes financières.
-                </p>
-                <ul class="mt-8 space-y-4">
-                    <li class="flex items-center gap-3 font-semibold text-slate-700">
-                        <span class="w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xs">✓</span>
-                        Monitoring 24/7 depuis Lomé
-                    </li>
-                    <li class="flex items-center gap-3 font-semibold text-slate-700">
-                        <span class="w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xs">✓</span>
-                        Tests de parcours USSD profonds (*909#)
-                    </li>
-                </ul>
-                <div class="mt-10">
-                    <a href="#solutions" class="text-blue-600 font-bold border-b-2 border-blue-600 pb-1">Voir nos solutions</a>
-                </div>
-            </div>
 
-            <div class="lg:w-1/2 relative">
-                <div class="space-y-4 relative z-10">
-                    <div class="bg-white p-6 rounded-2xl shadow-xl flex items-center gap-4 transform -rotate-1">
-                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600">✅</div>
-                        <div>
-                            <div class="font-bold">AGL Group Website</div>
-                            <div class="text-sm text-slate-400">Statut : Opérationnel - Latence 0.8s</div>
-                        </div>
-                    </div>
-                    <div class="bg-white p-6 rounded-2xl shadow-xl flex items-center gap-4 translate-x-12">
-                        <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-600">⚠️</div>
-                        <div>
-                            <div class="font-bold">Parcours USSD *145#</div>
-                            <div class="text-sm text-slate-400">Timeout détecté à Agoè-Nyivé</div>
-                        </div>
-                    </div>
-                    <div class="bg-white p-6 rounded-2xl shadow-xl flex items-center gap-4 transform rotate-1">
-                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">📊</div>
-                        <div>
-                            <div class="font-bold">Rapport BOA Togo</div>
-                            <div class="text-sm text-slate-400">Disponibilité mensuelle : 99.98%</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="absolute -top-10 -right-10 w-64 h-64 bg-blue-100 rounded-full blur-3xl opacity-50"></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-[#0f172a] py-20 text-white rounded-[3rem] mx-6">
-        <div class="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+    <!-- Stats -->
+    <section class="bg-[#0f172a] py-16 text-white transform -translate-y-16 rounded-[2rem] mx-6 shadow-2xl relative z-20 border border-slate-800">
+        <div class="container mx-auto px-6 grid grid-cols-2 lg:grid-cols-4 gap-12 text-center">
             <div>
-                <div class="text-4xl font-extrabold mb-2">80+</div>
+                <div class="text-5xl font-extrabold mb-2 text-white">80+</div>
                 <div class="text-blue-400 text-sm font-bold uppercase tracking-widest">Entreprises suivies</div>
             </div>
             <div>
-                <div class="text-4xl font-extrabold mb-2">10</div>
-                <div class="text-blue-400 text-sm font-bold uppercase tracking-widest">Tests / Heure</div>
+                <div class="text-5xl font-extrabold mb-2 text-white">10k+</div>
+                <div class="text-blue-400 text-sm font-bold uppercase tracking-widest">Tests / Jour</div>
             </div>
             <div>
-                <div class="text-4xl font-extrabold mb-2">24/7</div>
+                <div class="text-5xl font-extrabold mb-2 text-white">24/7</div>
                 <div class="text-blue-400 text-sm font-bold uppercase tracking-widest">Surveillance</div>
             </div>
             <div>
-                <div class="text-4xl font-extrabold mb-2">0ms</div>
+                <div class="text-5xl font-extrabold mb-2 text-white">0ms</div>
                 <div class="text-blue-400 text-sm font-bold uppercase tracking-widest">Délai d'alerte</div>
             </div>
         </div>
     </section>
 
-    <footer class="container mx-auto px-6 py-20 text-center">
-        <div class="text-xl font-extrabold text-[#0f172a] mb-6">SérénitéDigitale</div>
-        <p class="text-slate-400 text-sm">© 2026 Lomé, Togo. Réalisé par Joseph Konka.</p>
-        <div class="mt-6 flex justify-center gap-8 text-sm font-bold text-slate-900">
-            <a href="#">LinkedIn</a>
-            <a href="#">Twitter</a>
-            <a href="#">Contact</a>
+
+    <!-- About -->
+    <section id="about" class="py-24 bg-white border-y border-slate-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-[#0f172a]">À propos</h2>
+                <p class="mt-4 text-slate-500 max-w-2xl mx-auto text-lg">
+                    Investissez dans votre Sérénité Digitale Une structure progressive pour accompagner la montée en maturité digitale des entreprises au Togo.
+                </p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl font-extrabold text-[#0f172a] leading-tight">
+                        Une expertise <span class="text-blue-600">togolaise</span> pour les services essentiels.
+                    </h2>
+                    <p class="mt-6 text-lg text-slate-600 leading-relaxed">
+                        Sérénité Digitale est une jeune entreprise de Lomé qui se donne pour mission de garantir un **Uptime de 99,99%** aux institutions du Togo. Nous comprenons les défis locaux de connectivité et proposons une surveillance "Last Mile" infaillible.
+                    </p>
+                    <div class="mt-10">
+                        <a href="#contact" class="text-blue-600 font-bold border-b-2 border-blue-600 pb-1 hover:text-blue-800 transition">Demander notre Livre Blanc</a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 relative bg-slate-50 p-10 rounded-2xl border border-slate-100">
+                    <div class="space-y-4">
+                        <div class="bg-white p-5 rounded-xl shadow flex items-center gap-4 border border-green-100">
+                            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600">✓</div>
+                            <div><div class="font-bold">Banque Atlantique</div><div class="text-xs text-slate-400">UP ✅ (0.7s)</div></div>
+                        </div>
+                        <div class="bg-white p-5 rounded-xl shadow flex items-center gap-4 border border-blue-100 transform translate-x-8">
+                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">📊</div>
+                            <div><div class="font-bold">Rapport GVA Togo</div><div class="text-xs text-slate-400">Disponibilité : 100% (Ce mois)</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services -->
+    <section id="services" class="py-24 bg-slate-50 border-t border-slate-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-extrabold text-[#0f172a]">Nos Services</h2>
+            <p class="mt-4 text-slate-500 max-w-xl mx-auto">Le contrôle total de votre qualité de service. Parce que l'ego d'une institution ne supporte pas l'échec en ligne.</p>
+            <div class="grid md:grid-cols-3 gap-10 mt-16 text-left">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="text-3xl mb-4">🌐</div>
+                    <h3 class="text-xl font-bold text-[#0f172a]">Monitoring Web</h3>
+                    <p class="mt-3 text-slate-600 text-sm leading-relaxed">Nous surveillons votre site web toutes les 15min pour assurer une disponibilité de 99,9% à vos clients. Nous détectons les liens brisés, les images et les médias manquants.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 border-l-4 border-blue-600 scale-105">
+                    <div class="text-3xl mb-4">🛡️</div>
+                    <h3 class="text-xl font-bold text-[#0f172a]">Conformité UI/UX</h3>
+                    <p class="mt-3 text-slate-600 text-sm leading-relaxed">Nous testons la responsivité sur tous les écrans pour garantir la disponibilité de vos branches de revenus critiques.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="text-3xl mb-4">📱</div>
+                    <h3 class="text-xl font-bold text-[#0f172a]">Monitoring USSD</h3>
+                    <p class="mt-3 text-slate-600 text-sm leading-relaxed">Nous testons la profondeur de vos services. Nos automates simulent des achats de forfaits réels pour garantir que vos revenus ne dorment jamais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Clients -->
+    <section id="clients" class="py-24 bg-white border-y border-slate-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-[#0f172a]">Ils nous font confiance</h2>
+                <p class="mt-4 text-slate-500 max-w-2xl mx-auto text-lg">
+                    Investissez dans votre Sérénité Digitale Une structure progressive pour accompagner la montée en maturité digitale des entreprises au Togo.
+                </p>
+            </div>
+
+            <div class="flex flex-wrap justify-center items-center gap-12 opacity-30 grayscale hover:grayscale-0 transition duration-500">
+                <span class="text-5xl font-bold">AGL</span>
+                <span class="text-5xl font-bold">BOA</span>
+                <span class="text-5xl font-bold">ECOBANK</span>
+                <span class="text-5xl font-bold">TOGOCOM</span>
+                <span class="text-5xl font-bold">MOOV AFRICA</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-[#0f172a]">Tarification</h2>
+                <p class="mt-4 text-slate-500 max-w-2xl mx-auto text-lg">
+                    Investissez dans votre Sérénité Digitale Une structure progressive pour accompagner la montée en maturité digitale des entreprises au Togo.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 items-stretch">
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col hover:border-blue-200 transition">
+                    <div class="mb-6">
+                        <h3 class="font-bold text-sm uppercase tracking-widest text-slate-500">Niveau 1 : ESSENTIEL</h3>
+                        <p class="text-[10px] font-bold text-blue-500 mt-1 uppercase">Cible : PME & Startups</p>
+                    </div>
+                    <div class="text-3xl font-black text-[#0f172a]">50 000 <span class="text-xs font-medium text-slate-400">FCFA / mois</span></div>
+                    
+                    <ul class="mt-8 space-y-4 text-sm text-slate-600 flex-grow">
+                        <li class="flex items-start gap-2">✅ <span>Disponibilité : Statut actif (Ping)</span></li>
+                        <li class="flex items-start gap-2">✅ <span>Rapports Shutdown (Nombre & Durée)</span></li>
+                        <li class="flex items-start gap-2">⏱️ <span>Fréquence : Toutes les 15 min</span></li>
+                        <li class="flex items-start gap-2">📧 <span>Alertes : Email</span></li>
+                        <li class="flex items-start gap-2 text-slate-300 italic text-xs">❌ <span>Pas de contrôle des liens/médias</span></li>
+                    </ul>
+                    <a href="#contact" class="mt-10 block w-full text-center py-3 border border-[#0f172a] text-[#0f172a] rounded-xl font-bold hover:bg-[#0f172a] hover:text-white transition">Démarrer</a>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border-2 border-blue-600 shadow-2xl relative z-10 flex flex-col scale-105">
+                    <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest">Recommandé</span>
+                    <div class="mb-6">
+                        <h3 class="font-bold text-sm uppercase tracking-widest text-blue-600">Niveau 2 : PERFORMANCE</h3>
+                        <p class="text-[10px] font-bold text-blue-500 mt-1 uppercase">Cible : Grandes Entreprises</p>
+                    </div>
+                    <div class="text-3xl font-black text-[#0f172a]">100 000 <span class="text-xs font-medium text-slate-400">FCFA / mois</span></div>
+                    
+                    <ul class="mt-8 space-y-4 text-sm text-slate-600 flex-grow font-medium">
+                        <li class="flex items-start gap-2">✅ <span>Uptime & Rapports Shutdown</span></li>
+                        <li class="flex items-start gap-2 text-blue-700">⏱️ <span>Fréquence : Toutes les 5 min</span></li>
+                        <li class="flex items-start gap-2">🔗 <span>Contrôle Liens (Internes, Externes)</span></li>
+                        <li class="flex items-start gap-2 font-bold">⚠️ <span>Rapport UI/UX statique mensuel</span></li>
+                        <li class="flex items-start gap-2 text-green-600 font-bold">📱 <span>Alertes : Email + WhatsApp</span></li>
+                    </ul>
+                    <a href="#contact" class="mt-10 block w-full text-center py-3 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-200">Choisir ce plan</a>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col hover:border-blue-200 transition">
+                    <div class="mb-6">
+                        <h3 class="font-bold text-sm uppercase tracking-widest text-slate-500">Niveau 3 : PREMIUM</h3>
+                        <p class="text-[10px] font-bold text-blue-500 mt-1 uppercase">Cible : Serv Essent & Orgs Int.</p>
+                    </div>
+                    <div class="text-3xl font-black text-[#0f172a]">150 000 <span class="text-xs font-medium text-slate-400">FCFA / mois</span></div>
+                    
+                    <ul class="mt-8 space-y-4 text-sm text-slate-600 flex-grow">
+                        <li class="flex items-start gap-2">✅ <span>Uptime & Rapports complets</span></li>
+                        <li class="flex items-start gap-2 font-bold text-red-600">🚀 <span>Fréquence : Toutes les 1 min</span></li>
+                        <li class="flex items-start gap-2">🖼️ <span>Audit complet Médias & Fichiers</span></li>
+                        <li class="flex items-start gap-2">✨ <span>Test Responsivité & Alignement</span></li>
+                        <li class="flex items-start gap-2">🔔 <span>SMS + WhatsApp + Dashboard</span></li>
+                    </ul>
+                    <a href="#contact" class="mt-10 block w-full text-center py-3 border border-[#0f172a] text-[#0f172a] rounded-xl font-bold hover:bg-[#0f172a] hover:text-white transition">Choisir</a>
+                </div>
+
+                <div class="bg-[#0f172a] p-8 rounded-2xl border border-slate-800 shadow-sm flex flex-col text-white">
+                    <div class="mb-6">
+                        <h3 class="font-bold text-sm uppercase tracking-widest text-blue-400">OFFRE "ENTREPRISE"</h3>
+                        <p class="text-[10px] font-bold text-slate-400 mt-1 uppercase">Cible : Mission-Critique</p>
+                    </div>
+                    <div class="text-2xl font-black">Sur Devis</div>
+                    <p class="text-[10px] text-slate-400 mt-1">À partir de 300 000 FCFA / mois</p>
+                    
+                    <ul class="mt-8 space-y-4 text-xs text-slate-300 flex-grow">
+                        <li class="flex items-start gap-2">📈 <span>Tests de Montée en Charge (Simulation pics)</span></li>
+                        <li class="flex items-start gap-2">🤖 <span>Contrôle Qualité UI Automatisé</span></li>
+                        <li class="flex items-start gap-2 text-yellow-400">🛡️ <span>Audit de Sécurité de Surface (SSL)</span></li>
+                        <li class="flex items-start gap-2">👷 <span>Support Dédié (Ingénieur expert)</span></li>
+                    </ul>
+                    <a href="#contact" class="mt-10 block w-full text-center py-3 bg-white text-[#0f172a] rounded-xl font-bold hover:bg-slate-100 transition">Contacter un expert</a>
+                </div>
+            </div>
+
+            <div class="mt-16 bg-blue-50 border border-blue-100 p-8 rounded-3xl">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="text-4xl">🤝</div>
+                    <div>
+                        <h4 class="text-xl font-extrabold text-[#0f172a]">Offre "Partenaire de Confiance" (Engagement 5 Ans)</h4>
+                        <p class="text-slate-600 mt-2 text-sm leading-relaxed">
+                            Sécurisez votre budget digital sur le long terme : <strong>La 5ème année est offerte</strong> (20% de remise annuelle) et nous garantissons le <strong>gel de votre tarif de signature</strong> pendant toute la durée du contrat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 bg-white border-y border-slate-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-[#0f172a]">Contact</h2>
+                <p class="mt-4 text-slate-500 max-w-2xl mx-auto text-lg">
+                    Nous sommes disponibles pour échanger à propos de votre site web, la montée en maturité digitale des entreprises au Togo.
+                </p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-16">
+                <div class="lg:w-1/3 p-10 rounded-2xl border border-slate-100">
+                    <h2 class="text-4xl font-extrabold text-[#0f172a]">Parlons de votre disponibilité.</h2>
+                    <p class="mt-4 text-slate-600">contact@serenite.tg</p>
+                    <p class="text-slate-600">+228 91 51 89 23 (WhatsApp)</p>
+                    <p class="text-slate-400 mt-2">Lomé, Quartier Administratif, Togo</p>
+                </div>
+                <form class="lg:w-2/3 grid grid-cols-2 gap-6 bg-slate-50 p-10 rounded-2xl border border-slate-100 shadow-sm">
+                    <input type="text" placeholder="Prénom" class="p-3 border rounded-lg focus:ring-1 focus:ring-blue-600 outline-none">
+                    <input type="text" placeholder="Nom" class="p-3 border rounded-lg focus:ring-1 focus:ring-blue-600 outline-none">
+                    <input type="email" placeholder="Email Professionnel" class="p-3 border rounded-lg focus:ring-1 focus:ring-blue-600 outline-none col-span-2">
+                    <textarea placeholder="Votre message pour une démonstration live..." class="p-3 border rounded-lg h-32 col-span-2 focus:ring-1 focus:ring-blue-600 outline-none"></textarea>
+                    <button class="bg-[#0f172a] text-white font-bold py-3 px-8 rounded-lg hover:bg-black transition col-span-2">Envoyer ma demande</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-500 py-16 text-center border-t border-slate-800 rounded-t-[3rem] mx-6">
+        <div class="container mx-auto px-6">
+            <div class="text-xl font-bold text-white mb-6">Sérénité<span class="text-blue-500">Digitale</span></div>
+            <p class="italic text-sm">"L'assurance qualité pour l'élite économique du Togo."</p>
+            <div class="mt-8 pt-8 border-t border-slate-800 text-xs">
+                © 2026 Sérénité Digitale Lomé. Réalisé par Joseph Konka.
+            </div>
         </div>
     </footer>
+
+    <!-- Scroll to Top -->
+    <a href="#" class="fixed bottom-8 right-8 bg-blue-600 text-white p-3 rounded-full shadow-2xl hover:bg-blue-800 transition z-50 shadow-blue-700/30">↑</a>
 
 </body>
 </html>
