@@ -1,167 +1,155 @@
----
-// Syntaxe Astro : C'est ici que vous pouvez importer des composants ou du code JS si besoin.
-// Pour cette version statique, nous n'en avons pas besoin.
----
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sérénité Digitale | Monitoring Web & USSD Togo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
 
-<html lang="fr">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Sérénité Digitale Togo | Monitoring Web & USSD Proactif</title>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-		<style>
-			body {
-				font-family: 'Inter', sans-serif;
-			}
-		</style>
-	</head>
-	<body class="bg-gray-50 text-gray-900">
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-200">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="text-2xl font-extrabold text-blue-700">Sérénité<span class="text-slate-900">Digitale</span></div>
+            <div class="hidden md:flex items-center space-x-8 font-medium text-slate-600">
+                <a href="#features" class="hover:text-blue-700 transition">Fonctionnalités</a>
+                <a href="#ussd" class="hover:text-blue-700 transition">Spécial USSD</a>
+                <a href="#pricing" class="hover:text-blue-700 transition">Tarifs</a>
+            </div>
+            <a href="mailto:contact@serenite.tg" class="bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition shadow-lg shadow-blue-700/20">Audit Gratuit</a>
+        </nav>
+    </header>
 
-		<header class="bg-white shadow-sm sticky top-0 z-50">
-			<nav class="container mx-auto px-6 py-4 flex items-center justify-between">
-				<div class="text-2xl font-bold text-blue-700">Sérénité<span class="text-gray-900">Digitale</span></div>
-				<div class="hidden md:flex items-center space-x-8">
-					<a href="#features" class="text-gray-600 hover:text-blue-700">Fonctionnalités</a>
-					<a href="#pricing" class="text-gray-600 hover:text-blue-700">Tarifs</a>
-					<a href="#ussd" class="text-gray-600 hover:text-blue-700">Spécial USSD</a>
-				</div>
-				<a href="mailto:contact@serenite.tg" class="bg-blue-700 text-white px-6 py-2 rounded-full hover:bg-blue-800 transition">Demander un Audit</a>
-			</nav>
-		</header>
+    <section class="relative bg-white py-20 lg:py-32 overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight tracking-tight">
+                Ne laissez plus un site web en panne<br/> freiner votre croissance au <span class="text-blue-700">Togo</span>.
+            </h1>
+            <p class="mt-8 text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                Surveillance 24/7, audits UI et tests de charge pour les entreprises d'excellence à Lomé. Assurez une disponibilité de 99,9% à vos clients.
+            </p>
+            <div class="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="mailto:contact@serenite.tg" class="bg-blue-700 text-white px-10 py-4 rounded-xl text-lg font-bold hover:bg-blue-800 transition shadow-xl shadow-blue-700/30">
+                    Obtenir mon Audit Flash Gratuit
+                </a>
+                <a href="#pricing" class="bg-slate-100 text-slate-900 px-10 py-4 rounded-xl text-lg font-bold hover:bg-slate-200 transition">
+                    Voir les Tarifs
+                </a>
+            </div>
+        </div>
+    </section>
 
-		<section class="bg-white py-24">
-			<div class="container mx-auto px-6 text-center">
-				<h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight">
-					Ne laissez plus un site web en panne<br/> freiner votre croissance au <span class="text-blue-700">Togo</span>.
-				</h1>
-				<p class="mt-8 text-xl text-gray-600 max-w-3xl mx-auto">
-					Surveillance 24/7, audits UI et tests de charge pour les entreprises d'excellence à Lomé. Assurez une disponibilité de 99,9% à vos clients.
-				</p>
-				<div class="mt-12 flex gap-4 justify-center">
-					<a href="mailto:contact@serenite.tg?subject=Demande d'Audit Flash Gratuit" class="bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-800 transition">Obtenir mon Audit Flash Gratuit</a>
-					<a href="#pricing" class="bg-gray-100 text-gray-900 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-200 transition">Voir les Tarifs</a>
-				</div>
-			</div>
-		</section>
+    <section id="features" class="py-20 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="text-4xl font-black text-blue-700">60%</div>
+                    <h3 class="mt-4 text-xl font-bold">Taux de Churn</h3>
+                    <p class="mt-2 text-slate-600 leading-relaxed">des utilisateurs quittent un site lent. Ne perdez plus de clients à cause de la latence.</p>
+                </div>
+                <div class="bg-white p-10 rounded-2xl shadow-xl border-t-4 border-blue-700 scale-105">
+                    <div class="text-4xl font-black text-blue-700">12h/mois</div>
+                    <h3 class="mt-4 text-xl font-bold">Indisponibilité</h3>
+                    <p class="mt-2 text-slate-600 leading-relaxed">moyenne constatée sur les sites non supervisés à Lomé. Soyez le premier informé.</p>
+                </div>
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="text-4xl font-black text-blue-700">99.9%</div>
+                    <h3 class="mt-4 text-xl font-bold">Disponibilité</h3>
+                    <p class="mt-2 text-slate-600 leading-relaxed">C'est le standard que nous garantissons pour votre image de marque au Togo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<section id="features" class="py-20 bg-gray-100">
-			<div class="container mx-auto px-6">
-				<h2 class="text-4xl font-bold text-center text-gray-900">La performance digitale n'est pas un luxe.</h2>
-				<p class="mt-4 text-center text-gray-600 text-lg">Chaque dysfonctionnement est une perte de revenus et de crédibilité.</p>
-				
-				<div class="grid md:grid-cols-3 gap-12 mt-16">
-					<div class="bg-white p-8 rounded-xl shadow-md text-center">
-						<div class="text-5xl text-blue-700 font-bold">60%</div>
-						<h3 class="mt-6 text-xl font-semibold text-gray-900">Taux de Churn</h3>
-						<p class="mt-4 text-gray-600">des utilisateurs quittent un site qui met plus de 3 secondes à charger. Ne les perdez plus.</p>
-					</div>
-					<div class="bg-white p-8 rounded-xl shadow-md text-center border-l-4 border-blue-700">
-						<div class="text-5xl text-blue-700 font-bold">12h<span class="text-3xl">/mois</span></div>
-						<h3 class="mt-6 text-xl font-semibold text-gray-900">Indisponibilité Moyenne</h3>
-						<p class="mt-4 text-gray-600">non détectée pour un site non supervisé à Lomé. Soyez alerté avant vos clients.</p>
-					</div>
-					<div class="bg-white p-8 rounded-xl shadow-md text-center">
-						<div class="text-5xl text-blue-700 font-bold">0</div>
-						<h3 class="mt-6 text-xl font-semibold text-gray-900">Confiance Client</h3>
- 						<p class="mt-4 text-gray-600">C'est le nombre de clients qui finaliseront une transaction avec une image brisée ou un lien mort.</p>
-					</div>
-				</div>
-			</div>
-		</section>
+    <section id="ussd" class="py-24 bg-white">
+        <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-16">
+            <div class="lg:w-1/2">
+                <span class="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wider">Exclusivité Telco</span>
+                <h2 class="mt-6 text-4xl font-extrabold text-slate-900">Audit proactif de vos parcours USSD.</h2>
+                <p class="mt-6 text-lg text-slate-600 leading-relaxed">
+                    Nous testons la profondeur de vos services (<code class="bg-slate-100 px-2 rounded">*909#</code>, <code class="bg-slate-100 px-2 rounded">*145#</code>). Nos automates simulent des achats de forfaits réels pour garantir que vos revenus ne dorment jamais.
+                </p>
+            </div>
+            <div class="lg:w-1/2 w-full bg-slate-900 rounded-3xl p-8 font-mono text-sm shadow-2xl border border-slate-800">
+                <div class="flex gap-2 mb-4">
+                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                </div>
+                <p class="text-blue-400">$ python monitoring_ussd.py</p>
+                <p class="text-slate-300 mt-2">Checking USSD Path: *909*2# (Forfaits)</p>
+                <p class="text-green-400">... Test 1/10: SUCCESS (0.9s)</p>
+                <p class="text-green-400">... Test 2/10: SUCCESS (1.2s)</p>
+                <p class="text-red-400">... Test 3/10: FAILED (Connection Timeout)</p>
+                <p class="text-yellow-500 mt-2">>>> Alerte: Congestion réseau détectée.</p>
+                <p class="text-slate-400">>>> Notification envoyée au DSI via WhatsApp...</p>
+            </div>
+        </div>
+    </section>
 
-		<section id="ussd" class="py-24 bg-white">
-			<div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
-				<div class="md:w-1/2">
-					<span class="bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm font-semibold">Exclusivité Togo</span>
-					<h2 class="mt-6 text-4xl font-bold text-gray-900 leading-tight">Auditez vos parcours USSD critically.</h2>
-					<p class="mt-6 text-lg text-gray-600">
-						Pour les opérateurs et agrégateurs, nous testons la profondeur de vos codes (`*909#`, `*145#`). Nos bots simulent 10 achats de forfaits par heure pour garantir que votre moteur d'offre est actif 24h/24.
-					</p>
-					<p class="mt-4 text-gray-600">
-						Détectez les congestions réseaux par quartier (Agoè, Adidogomé, Grand Marché) avant qu'elles n'impactent vos revenus.
-					</p>
-				</div>
-				<div class="md:w-1/2 bg-gray-900 text-green-400 p-8 rounded-2xl font-mono shadow-2xl">
-					<p>>>> Test parcours USSD : *909*2#</p>
-					<p class="text-gray-500">... Tentative 1/10 : ✅ OK (0.8s)</p>
-					<p class="text-gray-500">... Tentative 2/10 : ✅ OK (1.1s)</p>
-					<p class="text-red-400">... Tentative 3/10 : ❌ ÉCHEC (Timeout)</p>
-					<p>>>> Diagnostic : Congestion détectée sur la branche 'Achat Forfaits'.</p>
-					<p>>>> Alerte envoyée au DSI via WhatsApp. <span class="animate-pulse">_</span></p>
-				</div>
-			</div>
-		</section>
+    <section id="pricing" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-extrabold text-center mb-16">Une offre pour chaque niveau d'exigence.</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl border border-slate-200">
+                    <h3 class="text-xl font-bold">ESSENTIEL</h3>
+                    <div class="mt-4 flex items-baseline">
+                        <span class="text-4xl font-black">50.000</span>
+                        <span class="ml-2 text-slate-500 font-medium">FCFA / mois</span>
+                    </div>
+                    <ul class="mt-8 space-y-4 text-slate-600">
+                        <li>✅ Statut actif (Ping 15min)</li>
+                        <li>✅ Rapport de Shutdown</li>
+                        <li>✅ Alertes Email</li>
+                    </ul>
+                    <a href="mailto:contact@serenite.tg" class="mt-10 block w-full text-center py-3 border-2 border-slate-900 rounded-xl font-bold hover:bg-slate-900 hover:text-white transition">Choisir ce plan</a>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border-2 border-blue-700 shadow-2xl relative">
+                    <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-700 text-white px-4 py-1 rounded-full text-xs font-bold uppercase">Populaire</span>
+                    <h3 class="text-xl font-bold">PERFORMANCE</h3>
+                    <div class="mt-4 flex items-baseline text-blue-700">
+                        <span class="text-4xl font-black">100.000</span>
+                        <span class="ml-2 text-slate-500 font-medium">FCFA / mois</span>
+                    </div>
+                    <ul class="mt-8 space-y-4 text-slate-600">
+                        <li class="font-bold text-slate-900">✅ Tout le plan Essentiel</li>
+                        <li>✅ Liens brisés & Médias</li>
+                        <li>✅ Alertes WhatsApp 24/7</li>
+                        <li>✅ Rapport UI/UX Mensuel</li>
+                    </ul>
+                    <a href="mailto:contact@serenite.tg" class="mt-10 block w-full text-center py-4 bg-blue-700 text-white rounded-xl font-bold hover:bg-blue-800 transition">Choisir ce plan</a>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-slate-200">
+                    <h3 class="text-xl font-bold">PREMIUM</h3>
+                    <div class="mt-4 flex items-baseline">
+                        <span class="text-4xl font-black">150.000</span>
+                        <span class="ml-2 text-slate-500 font-medium">FCFA / mois</span>
+                    </div>
+                    <ul class="mt-8 space-y-4 text-slate-600">
+                        <li class="font-bold text-slate-900">✅ Tout le plan Performance</li>
+                        <li>✅ Test Responsivité Mobile</li>
+                        <li>✅ Audit Alignement Éléments</li>
+                        <li>✅ Dashboard Temps Réel</li>
+                    </ul>
+                    <a href="mailto:contact@serenite.tg" class="mt-10 block w-full text-center py-3 border-2 border-slate-900 rounded-xl font-bold hover:bg-slate-900 hover:text-white transition">Choisir ce plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<section id="pricing" class="py-20 bg-gray-100">
-			<div class="container mx-auto px-6">
-				<h2 class="text-4xl font-bold text-center text-gray-900">Une offre adaptée à votre exigence de qualité.</h2>
-				
-				<div class="grid md:grid-cols-3 gap-10 mt-16 items-start">
-					<div class="bg-white p-10 rounded-2xl shadow-lg border border-gray-100">
-						<h3 class="text-2xl font-bold text-gray-900">ESSENTIEL</h3>
-						<div class="mt-6 text-5xl font-extrabold">50.000 <span class="text-lg font-medium text-gray-500">FCFA / mois</span></div>
-						<ul class="mt-10 space-y-4 text-gray-600">
-							<li class="flex items-center gap-3">✅ Statut actif (Ping toutes les 15min)</li>
-							<li class="flex items-center gap-3">✅ Rapport Shutdown (Nombre & Durée)</li>
-							<li class="flex items-center gap-3">✅ Alertes par Email</li>
-						</ul>
-						<a href="mailto:contact@serenite.tg" class="mt-12 block text-center bg-gray-900 text-white py-3 rounded-lg hover:bg-black">S'abonner</a>
-					</div>
-					
-					<div class="bg-white p-10 rounded-2xl shadow-2xl border-2 border-blue-700 transform md:-translate-y-4">
-						<span class="absolute -top-4 left-10 bg-blue-700 text-white px-4 py-1 rounded-full text-sm font-semibold">Recommandé AGET</span>
-						<h3 class="text-2xl font-bold text-gray-900">PERFORMANCE</h3>
-						<div class="mt-6 text-5xl font-extrabold">100.000 <span class="text-lg font-medium text-gray-500">FCFA / mois</span></div>
-						<ul class="mt-10 space-y-4 text-gray-600">
-							<li class="flex items-center gap-3 font-semibold text-blue-700">✅ Tout le niveau ESSENTIEL</li>
-							<li class="flex items-center gap-3">✅ Vérification Liens (Internes, Externes, Ancres)</li>
-							<li class="flex items-center gap-3">✅ Alertes WhatsApp en temps réel</li>
-							<li class="flex items-center gap-3">✅ Rapport statique mensuel UI/UX</li>
-						</ul>
-						<a href="mailto:contact@serenite.tg" class="mt-12 block text-center bg-blue-700 text-white py-3 rounded-lg hover:bg-blue-800">S'abonner</a>
-					</div>
-					
-					<div class="bg-white p-10 rounded-2xl shadow-lg border border-gray-100">
-						<h3 class="text-2xl font-bold text-gray-900">PREMIUM</h3>
-						<div class="mt-6 text-5xl font-extrabold">150.000 <span class="text-lg font-medium text-gray-500">FCFA / mois</span></div>
-						<ul class="mt-10 space-y-4 text-gray-600">
-							<li class="flex items-center gap-3 font-semibold text-blue-700">✅ Tout le niveau PERFORMANCE</li>
-							<li class="flex items-center gap-3">✅ Images & Médias brisés</li>
-							<li class="flex items-center gap-3">✅ Test Responsivité & Alignement UI</li>
-							<li class="flex items-center gap-3">✅ Accès Dashboard Temps Réel</li>
-						</ul>
-						<a href="mailto:contact@serenite.tg" class="mt-12 block text-center bg-gray-900 text-white py-3 rounded-lg hover:bg-black">S'abonner</a>
-					</div>
-				</div>
-				
-				<div class="mt-16 bg-gray-900 text-white p-12 rounded-3xl flex flex-col md:flex-row items-center justify-between gap-10">
-					<div>
-						<h3 class="text-3xl font-bold">Besoin d'un contrôle de Mission-Critique ?</h3>
-						<p class="mt-4 text-gray-300 max-w-2xl">Tests de montée en charge (Load Testing) jusqu'à 10 000 utilisateurs, audit de sécurité de surface et support dédié par un Senior Engineer à Lomé.</p>
-					</div>
-					<a href="mailto:contact@serenite.tg" class="bg-white text-gray-900 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-200 transition whitespace-nowrap">Offre ENTREPRISE</a>
-				</div>
-			</div>
-		</section>
-		
-		<section class="py-20 bg-white">
-			<div class="container mx-auto px-6 text-center border-2 border-dashed border-gray-300 rounded-3xl p-16">
-				<h2 class="text-4xl font-bold text-gray-900">Verrouillez votre sérénité sur 5 ans.</h2>
-				<p class="mt-6 text-xl text-gray-600 max-w-2xl mx-auto">
-					Signez un contrat de confiance de 5 ans et bénéficiez de **la 5ème année totalement gratuite**. Gel des tarifs garanti, même en cas d'augmentation des prix publics.
-				</p>
-			</div>
-		</section>
+    <footer class="bg-slate-900 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <div class="text-2xl font-black">Sérénité<span class="text-blue-500">Digitale</span></div>
+            <p class="mt-4 text-slate-400 italic">"L'assurance qualité pour l'élite économique du Togo."</p>
+            <div class="mt-8 pt-8 border-t border-slate-800 text-sm text-slate-500">
+                &copy; 2026 Sérénité Digitale Lomé. Réalisé par Joseph Konka.
+            </div>
+        </div>
+    </footer>
 
-		<footer class="bg-gray-900 text-gray-400 py-12">
-			<div class="container mx-auto px-6 text-center">
-				<div class="text-2xl font-bold text-white">Sérénité<span class="text-blue-500">Digitale</span></div>
-				<p class="mt-4">Lomé, Quartier Administratif, Togo</p>
-				<p class="mt-2">© 2026. Tous droits réservés.</p>
-			</div>
-		</footer>
-
-	</body>
+</body>
 </html>
